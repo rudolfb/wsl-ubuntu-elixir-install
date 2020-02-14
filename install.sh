@@ -27,7 +27,7 @@ sudo apt -y install postgresql-12
 sudo apt -y install build-essential autoconf \
   m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev \
   libglu1-mesa-dev libpng-dev libssh-dev \
-  unixodbc-dev xsltproc fop libxml2-utils
+  unixodbc-dev xsltproc fop
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
