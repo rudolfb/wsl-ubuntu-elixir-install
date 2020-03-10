@@ -46,17 +46,17 @@ grep -xqF -- "$LINE" "$FILE" || echo -e "\n$LINE" | tee --append "$FILE"
 
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf list-all erlang
-asdf install erlang 22.2.6
-asdf global erlang 22.2.6
+asdf install erlang 22.2.8
+asdf global erlang 22.2.8
 
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 asdf list-all elixir
-asdf install elixir 1.10.1-otp-22
-asdf global elixir 1.10.1-otp-22
+asdf install elixir 1.10.2-otp-22
+asdf global elixir 1.10.2-otp-22
 
 mix do local.hex --force , \
   local.rebar --force , \
-  archive.install hex phx_new 1.4.13 --force
+  archive.install hex phx_new 1.4.15 --force
 
 # post installation steps
 # After this script you might want to execute
