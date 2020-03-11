@@ -45,18 +45,14 @@ grep -xqF -- "$LINE" "$FILE" || echo -e "\n$LINE" | tee --append "$FILE"
 . $HOME/.asdf/completions/asdf.bash
 
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-asdf list-all erlang
-asdf install erlang 22.2.8
-asdf global erlang 22.2.8
+# asdf list-all erlang
 
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-asdf list-all elixir
-asdf install elixir 1.10.2-otp-22
-asdf global elixir 1.10.2-otp-22
+# asdf list-all elixir
 
-mix do local.hex --force , \
-  local.rebar --force , \
-  archive.install hex phx_new 1.4.15 --force
+./elixir-erlang-asdf-install.sh
+
+./phoenix-install.sh
 
 # post installation steps
 # After this script you might want to execute
