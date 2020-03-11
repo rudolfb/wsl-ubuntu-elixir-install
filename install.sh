@@ -2,6 +2,7 @@
 # wsl --set-version Ubuntu-18.04 2
 
 # chmod +x install.sh
+# chmod +x *.sh
 
 sudo apt -y update
 sudo apt -y upgrade
