@@ -10,7 +10,8 @@ wsl --set-version Ubuntu-18.04 2
 Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:
 
 ```
-sudo printf '[network]\ngenerateResolvConf = false' > /etc/wsl.conf
+sudo su -c "echo '[network]' > /etc/wsl.conf"
+sudo su -c "echo 'generateResolvConf = false' >> /etc/wsl.conf"
 
 sudo nano /etc/resolve.conf
 # nameserver 8.8.8.8
