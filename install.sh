@@ -38,7 +38,13 @@ sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ eoan uni
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
 sudo apt update -y
 
-sudo apt -y install libwxgtk3.0-dev
+# sudo apt -y install libwxgtk3.0-dev
+sudo apt-get install libwxbase3.1-0-unofficial3 \
+                 libwxbase3.1unofficial3-dev \
+                 libwxgtk3.1-0-unofficial3 \
+                 libwxgtk3.1unofficial3-dev \
+                 wx3.1-headers \
+                 wx-common
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
