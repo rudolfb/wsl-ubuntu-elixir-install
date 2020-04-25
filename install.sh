@@ -7,6 +7,10 @@
 sudo apt -y update
 sudo apt -y upgrade
 
+ udo apt install libssl-dev make \
+  automake autoconf libncurses5-dev \
+  gcc unzip
+
 sudo apt -y install \
   git nano inotify-tools curl wget \
   traceroute net-tools whois libxml2-utils\
