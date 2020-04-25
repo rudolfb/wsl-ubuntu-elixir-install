@@ -20,4 +20,6 @@ cd wsl-ubuntu-elixir-install
 chmod +x *.sh
 
 ./install.sh
+./elixir-erlang-asdf-install.sh
+./phoenix-install.sh
 ```
