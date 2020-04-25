@@ -7,7 +7,7 @@
 sudo apt -y update
 sudo apt -y upgrade
 
- udo apt install libssl-dev make \
+sudo apt install libssl-dev make \
   automake autoconf libncurses5-dev \
   gcc unzip
 
