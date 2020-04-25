@@ -7,7 +7,7 @@ wsl --list --verbose
 wsl --set-version Ubuntu-18.04 2
 ```
 
-Since Ubuntu 20 the DNS seems to have an issue. The follwing lines set a hard coded DNS server:
+Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:
 
 ```
 sudo printf '[network]\ngenerateResolvConf = false' > /etc/wsl.conf
