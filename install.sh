@@ -30,9 +30,15 @@ sudo apt -y install postgresql-12
 # sudo service postgresql start
 
 sudo apt -y install build-essential autoconf \
-  m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev \
+  m4 libncurses5-dev libgl1-mesa-dev \
   libglu1-mesa-dev libpng-dev libssh-dev \
   unixodbc-dev xsltproc fop
+
+sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ eoan universe'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
+sudo apt update -y
+
+sudo apt -y install libwxgtk3.0-dev
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
