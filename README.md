@@ -12,6 +12,7 @@ Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard c
 ```
 sudo su -c "echo '[network]' > /etc/wsl.conf"
 sudo su -c "echo 'generateResolvConf = false' >> /etc/wsl.conf"
+sudo nano /etc/wsl.conf
 
 sudo nano /etc/resolve.conf
 # nameserver 8.8.8.8
