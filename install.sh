@@ -55,9 +55,9 @@ asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 # asdf list-all elixir
 
-./elixir-erlang-asdf-install.sh
+# ./elixir-erlang-asdf-install.sh
 
-./phoenix-install.sh
+# ./phoenix-install.sh
 
 # post installation steps
 # After this script you might want to execute
