@@ -34,11 +34,16 @@ sudo apt -y install build-essential autoconf \
   libglu1-mesa-dev libpng-dev libssh-dev \
   unixodbc-dev xsltproc fop
 
+# sudo apt -y install libwxgtk3.0-dev
+
+# Ubuntu 20.04 LTS does not have this package for Erlang
+# Need to install from source:
+# https://www.wxwidgets.org/downloads/
+# https://wiki.codelite.org/pmwiki.php/Main/WxWidgets31Binaries#toc2
+
 sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ eoan universe'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
 sudo apt update -y
-
-# sudo apt -y install libwxgtk3.0-dev
 sudo apt-get install libwxbase3.1-0-unofficial3 \
                  libwxbase3.1unofficial3-dev \
                  libwxgtk3.1-0-unofficial3 \
