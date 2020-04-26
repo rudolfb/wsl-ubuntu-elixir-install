@@ -1,3 +1,5 @@
+set -x
+
 # wsl --list --verbose
 # wsl --set-version Ubuntu-18.04 2
 
