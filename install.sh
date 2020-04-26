@@ -46,7 +46,7 @@ sudo apt -y install build-essential autoconf \
 sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ eoan universe'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
 sudo apt update -y
-sudo apt-get install libwxbase3.1-0-unofficial3 \
+sudo apt -y install libwxbase3.1-0-unofficial3 \
                  libwxbase3.1unofficial3-dev \
                  libwxgtk3.1-0-unofficial3 \
                  libwxgtk3.1unofficial3-dev \
