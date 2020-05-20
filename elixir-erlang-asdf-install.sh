@@ -1,5 +1,5 @@
-asdf install erlang 22.3.2
-asdf global erlang 22.3.2
+asdf install erlang 23.0
+asdf global erlang 23.0
 
-asdf install elixir 1.10.2-otp-22
-asdf global elixir 1.10.2-otp-22
+asdf install elixir 1.10.3-otp-22
+asdf global elixir 1.10.3-otp-22
