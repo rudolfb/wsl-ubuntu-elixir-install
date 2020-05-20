@@ -43,7 +43,7 @@ sudo apt -y install build-essential autoconf \
 # https://www.wxwidgets.org/downloads/
 # https://wiki.codelite.org/pmwiki.php/Main/WxWidgets31Binaries#toc2
 
-sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ eoan universe'
+sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ focal universe'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
 sudo apt -y update
 sudo apt -y install libwxbase3.1-0-unofficial3 \
