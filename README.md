@@ -3,8 +3,9 @@
 
 WSL version 2 is a lot faster than WSL version 1
 ```
+wsl --set-default-version 2
 wsl --list --verbose
-wsl --set-version Ubuntu-18.04 2
+wsl --set-version Ubuntu 2
 ```
 
 Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:
