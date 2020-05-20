@@ -11,30 +11,26 @@ sudo apt -y upgrade
 
 sudo apt -y install libssl-dev make \
   automake autoconf libncurses5-dev \
-  gcc unzip
-
-sudo apt -y install \
+  gcc unzip \
   git nano inotify-tools curl wget \
   traceroute net-tools whois libxml2-utils\
-  default-jdk
+  default-jdk  \
+  curl dirmngr apt-transport-https lsb-release ca-certificates \
+  build-essential autoconf \
+  m4 libncurses5-dev libgl1-mesa-dev \
+  libglu1-mesa-dev libpng-dev libssh-dev \
+  unixodbc-dev xsltproc fop
 
-sudo apt -y update
-sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 sudo apt -y install nodejs
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+echo "deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
 sudo apt update
 sudo apt -y install postgresql-client-12
 sudo apt -y install postgresql-12
 # sudo service postgresql start
-
-sudo apt -y install build-essential autoconf \
-  m4 libncurses5-dev libgl1-mesa-dev \
-  libglu1-mesa-dev libpng-dev libssh-dev \
-  unixodbc-dev xsltproc fop
 
 # sudo apt -y install libwxgtk3.0-dev
 
