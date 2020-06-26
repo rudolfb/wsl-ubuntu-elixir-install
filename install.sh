@@ -10,7 +10,8 @@ sudo apt -y update
 sudo apt -y upgrade
 
 sudo apt -y install git libgtk-3-dev \
-  libglu1-mesa-dev freeglut3-dev mesa-common-dev
+  libglu1-mesa-dev freeglut3-dev mesa-common-dev \
+  build-essential make
 mkdir ~/github
 cd ~/github
 git clone --branch WX_3_0_3_BRANCH https://github.com/wxWidgets/wxWidgets.git
