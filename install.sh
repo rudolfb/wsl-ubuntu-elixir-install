@@ -9,6 +9,17 @@ set -x
 sudo apt -y update
 sudo apt -y upgrade
 
+sudo apt -y install git libgtk-3-dev \
+  libglu1-mesa-dev freeglut3-dev mesa-common-dev
+mkdir ~/github
+cd ~/github
+git clone --branch WX_3_0_3_BRANCH https://github.com/wxWidgets/wxWidgets.git
+cd ~/github/wxWidgets/
+./configure --with-gtk --with-opengl --disable-optimise --enable-utf8 --enable-stc --enable-compat28 --prefix=/usr/local --enable-debug_info --enable-ipc
+make && sudo make install
+# export PATH=/usr/local/bin:$PATH
+cd ~
+
 sudo apt -y install libssl-dev make \
   automake autoconf libncurses5-dev \
   gcc unzip \
@@ -39,15 +50,15 @@ sudo apt -y install postgresql-12
 # https://www.wxwidgets.org/downloads/
 # https://wiki.codelite.org/pmwiki.php/Main/WxWidgets31Binaries#toc2
 
-sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ focal universe'
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
-sudo apt -y update
-sudo apt -y install libwxbase3.1-0-unofficial3 \
-                 libwxbase3.1unofficial3-dev \
-                 libwxgtk3.1-0-unofficial3 \
-                 libwxgtk3.1unofficial3-dev \
-                 wx3.1-headers \
-                 wx-common
+# sudo apt-add-repository 'deb https://repos.codelite.org/wx3.1.3/ubuntu/ focal universe'
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6856E1DB1AC82609
+# sudo apt -y update
+# sudo apt -y install libwxbase3.1-0-unofficial3 \
+#                  libwxbase3.1unofficial3-dev \
+#                  libwxgtk3.1-0-unofficial3 \
+#                  libwxgtk3.1unofficial3-dev \
+#                  wx3.1-headers \
+#                  wx-common
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
