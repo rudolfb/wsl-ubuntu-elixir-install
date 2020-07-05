@@ -82,6 +82,10 @@ asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 # asdf list-all elixir
 
+# Need rust for meeseeks
+asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
+# asdf list-all rust
+
 # ./elixir-erlang-asdf-install.sh
 
 # ./phoenix-install.sh
