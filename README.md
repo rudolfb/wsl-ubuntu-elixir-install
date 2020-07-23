@@ -1,5 +1,29 @@
 # wsl-ubuntu-elixir-install
 
+Installation steps
+
+```bash
+mkdir github
+cd github
+git clone https://github.com/rudolfb/wsl-ubuntu-elixir-install.git
+cd wsl-ubuntu-elixir-install
+
+# chmod +x install.sh
+chmod +x *.sh
+
+./install.sh
+exit
+cd ~/github/wsl-ubuntu-elixir-install/
+./elixir-erlang-asdf-install.sh
+./phoenix-install.sh
+```
+
+Update
+```bash
+./update.sh
+./elixir-erlang-asdf-install.sh
+./phoenix-install.sh
+```
 
 WSL version 2 is a lot faster than WSL version 1
 ```
@@ -24,22 +48,4 @@ sudo rm /etc/resolv.conf
 sudo unlink /etc/resolv.conf
 sudo bash -c "echo nameserver 192.168.188.1 > /etc/resolv.conf"
 sudo bash -c "echo nameserver 8.8.8.8 >> /etc/resolv.conf"
-```
-
-Installation steps
-
-```bash
-mkdir github
-cd github
-git clone https://github.com/rudolfb/wsl-ubuntu-elixir-install.git
-cd wsl-ubuntu-elixir-install
-
-# chmod +x install.sh
-chmod +x *.sh
-
-./install.sh
-exit
-cd ~/github/wsl-ubuntu-elixir-install/
-./elixir-erlang-asdf-install.sh
-./phoenix-install.sh
 ```
