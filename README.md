@@ -47,20 +47,26 @@ config :agento, Agento.Repo,
 ```
 
 ## Start postgresql service automatically when WSL opens
+Currently, when you start WSL, services will not automatically start. Here a workaround.
 
 ```
 sudo nano /etc/profile.d/start-postgresql.sh
 ```
 
-Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file
+Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file.
+
 ```
 #!/bin/bash
 sudo /usr/bin/start-postgresql
 ```
 
+Now create the above referenced file.
+
 ```
 sudo nano /usr/bin/start-postgresql
 ```
+
+Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file.
 
 ```
 #!/bin/bash
@@ -72,11 +78,16 @@ else
 fi
 ```
 
+Now, when starting Ubuntu, you will always be promted once for your admin password in order to start the postgresql service. Once Ubuntu is up and runing, opeing another Ubuntu terminal window will simply report that postgresql is already running.
+
+To avoid having to enter your password every time Ubuntu opens for the first time, execute the following.
+
 ```
 sudo visudo
 ```
 
-Add the follwing to the end of the file
+Add the follwing to the end of the file, **CTRL+O** to save, and **CTRL+X** to exit the file.
+
 ```
 %sudo ALL=NOPASSWD: /usr/bin/start-postgresql
 zq ALL=(ALL) NOPASSWD: ALL
