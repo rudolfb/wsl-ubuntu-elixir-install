@@ -1,6 +1,6 @@
 # wsl-ubuntu-elixir-install
 
-Installation steps
+## Installation steps
 
 ```bash
 mkdir github
@@ -18,21 +18,73 @@ cd ~/github/wsl-ubuntu-elixir-install/
 ./phoenix-install.sh
 ```
 
-Update
+## Update
 ```bash
 ./update.sh
 ./elixir-erlang-asdf-install.sh
 ./phoenix-install.sh
 ```
 
-WSL version 2 is a lot faster than WSL version 1
+## WSL version 2 is a lot faster than WSL version 1
 ```
 wsl --set-default-version 2
 wsl --list --verbose
 wsl --set-version Ubuntu 2
 ```
 
-Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:
+## Assigning a password for Postgres after Postgres installation
+```
+sudo su - postgres
+psql -c "alter user postgres with password 'postgres'"
+```
+
+Then in the Elixir **/config/dev.exs** assign the password:
+
+```
+# Configure your database
+config :agento, Agento.Repo,
+  username: "postgres",
+  password: "postgres",
+```
+
+## Start postgresql service automatically when WSL opens
+
+```
+sudo nano /etc/profile.d/start-postgresql.sh
+```
+
+Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file
+```
+#!/bin/bash
+sudo /usr/bin/start-postgresql
+```
+
+```
+sudo nano /usr/bin/start-postgresql
+```
+
+```
+#!/bin/bash
+if pgrep -x postgres >/dev/null
+then
+  echo "postgresql already started"
+else
+  sudo service postgresql start
+fi
+```
+
+```
+sudo visudo
+```
+
+Add the follwing to the end of the file
+```
+%sudo ALL=NOPASSWD: /usr/bin/start-postgresql
+zq ALL=(ALL) NOPASSWD: ALL
+```
+
+## DNS
+~~Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:~~
 
 ```bash
 sudo su -c "echo '[network]' > /etc/wsl.conf"
