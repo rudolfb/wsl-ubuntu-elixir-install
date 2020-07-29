@@ -1,6 +1,6 @@
 # wsl-ubuntu-elixir-install
 
-## Installation steps
+## Installation
 
 ```bash
 mkdir github
@@ -8,7 +8,6 @@ cd github
 git clone https://github.com/rudolfb/wsl-ubuntu-elixir-install.git
 cd wsl-ubuntu-elixir-install
 
-# chmod +x install.sh
 chmod +x *.sh
 
 ./install.sh
