@@ -94,18 +94,25 @@ asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 # After this script you might want to execute
 # source ~/.bashrc
 # in the interactive shell, to load the asdf scripts.
+
 # Or close the shell and open a new shell.
+
 # There might be a port conflict with Postgres when installed in
 # an Ubuntu WSL session and Windows. If there is, the installation in WSL
 # will assign a different port, e.g. 5433
 # You will need to take this into account in Elixir when defining
 # the logon information for Postgres.
-#To change the port in Ubuntu:
+
+# To change the port in Ubuntu:
 # sudo nano /etc/postgresql/*/main/postgresql.conf
+
 # This will find and open the postgresql.conf
+
 # Change the port to 2345, CTRL+O to save and CTRL+X to exit.
+
 # sudo service postgresql start
 # sudo su - postgres
 # psql -c "alter user postgres with password 'postgres'"
-# Modify your Exlixir dev.exs, adding an appropriate
+
+# Modify your Exlixir dev.exs, adding an appropriate password and/or
 # port: to the Repo config.
