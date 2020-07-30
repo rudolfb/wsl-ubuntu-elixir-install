@@ -2,6 +2,14 @@
 
 ## Installation
 
+Installs the prerequisites for Erlang, Elixir and Phoenix in Ubuntu on WSL including
+
+- wxWidgets
+- Postgres
+- nodejs
+- asdf
+- rust
+
 ```bash
 mkdir github
 cd github
