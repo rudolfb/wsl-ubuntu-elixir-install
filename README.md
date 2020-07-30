@@ -12,6 +12,11 @@ chmod +x *.sh
 
 ./install.sh
 exit
+```
+
+Automating the installation of asdf and then using asdf in the same session does not seem to work, so after installing asdf, one needs to close and reopen the terminal, then continue with the installation.
+
+```
 cd ~/github/wsl-ubuntu-elixir-install/
 ./elixir-erlang-asdf-install.sh
 ./phoenix-install.sh
