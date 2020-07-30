@@ -14,7 +14,7 @@ chmod +x *.sh
 exit
 ```
 
-Automating the installation of asdf and then using asdf in the same session does not seem to work, so after installing asdf, one needs to close and reopen the terminal, then continue with the installation.
+Automating the installation of ```asdf``` and then using ```asdf``` in the same session does not seem to work, so after installing ```asdf```, one needs to close and reopen the terminal, then continue with the installation.
 
 ```
 cd ~/github/wsl-ubuntu-elixir-install/
@@ -58,7 +58,7 @@ Currently, when you start WSL, services will not automatically start. Here a wor
 sudo nano /etc/profile.d/start-postgresql.sh
 ```
 
-Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file.
+Add the following code, ```CTRL+O``` to save, and ```CTRL+X``` to exit the file.
 
 ```
 #!/bin/bash
@@ -71,19 +71,19 @@ Now create the above referenced file.
 sudo nano /usr/bin/start-postgresql
 ```
 
-Add the follwing code, **CTRL+O** to save, and **CTRL+X** to exit the file.
+Add the following code, ```CTRL+O``` to save, and ```CTRL+X``` to exit the file.
 
 ```
 #!/bin/bash
 if pgrep -x postgres >/dev/null
 then
-  echo "postgresql already started"
+  echo "postgresql service already started"
 else
   sudo service postgresql start
 fi
 ```
 
-Now, when starting Ubuntu, you will always be promted once for your admin password in order to start the postgresql service. Once Ubuntu is up and runing, opeing another Ubuntu terminal window will simply report that postgresql is already running.
+Now, when starting Ubuntu, you will always be promted once for your admin password in order to start the ```postgresql``` service. Once Ubuntu is up and runing, opeing another Ubuntu terminal window will simply report that postgresql is already running.
 
 To avoid having to enter your password every time Ubuntu opens for the first time, execute the following.
 
@@ -91,7 +91,7 @@ To avoid having to enter your password every time Ubuntu opens for the first tim
 sudo visudo
 ```
 
-Add the follwing to the end of the file, **CTRL+O** to save, and **CTRL+X** to exit the file.
+Add the following to the end of the file, ```CTRL+O``` to save, and ```CTRL+X``` to exit the file.
 
 ```
 %sudo ALL=NOPASSWD: /usr/bin/start-postgresql
