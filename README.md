@@ -106,7 +106,7 @@ Add the following to the end of the file, ```CTRL+O``` to save, and ```CTRL+X```
 zq ALL=(ALL) NOPASSWD: ALL
 ```
 
-## DNS
+## ~~DNS~~
 ~~Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:~~
 
 ```bash
