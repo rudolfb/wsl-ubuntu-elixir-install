@@ -91,6 +91,12 @@ else
 fi
 ```
 
+Now allow the ```start-postgresql``` script to run as a script:
+
+```
+sudo chmod +x /usr/bin/start-postgresql
+```
+
 Now, when starting Ubuntu, you will always be promted once for your admin password in order to start the ```postgresql``` service. Once Ubuntu is up and runing, opeing another Ubuntu terminal window will simply report that postgresql is already running.
 
 To avoid having to enter your password every time Ubuntu opens for the first time, execute the following.
