@@ -86,6 +86,10 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 # asdf list-all rust
 
+# Need ruby for htmlbeautifier
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+# asdf list-all ruby
+
 # ./elixir-erlang-asdf-install.sh
 
 # ./phoenix-install.sh
