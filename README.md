@@ -112,6 +112,19 @@ Add the following to the end of the file, ```CTRL+O``` to save, and ```CTRL+X```
 zq ALL=(ALL) NOPASSWD: ALL
 ```
 
+## VSCode
+
+- https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls
+- https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang
+- https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+- https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres
+- https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+- https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+- https://marketplace.visualstudio.com/items?itemName=ouven.vscode-yab-for-eex-leex
+
+- https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer
+- https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
+
 ## ~~DNS~~
 ~~Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:~~
 
