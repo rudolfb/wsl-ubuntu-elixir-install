@@ -6,3 +6,6 @@ asdf global elixir 1.10.4-otp-23
 
 asdf install rust 1.46.0
 asdf global rust 1.46.0
+
+asdf install ruby 2.7.1
+asdf global ruby 2.7.1
