@@ -14,3 +14,4 @@ asdf plugin update ruby
 asdf install ruby 2.7.1
 asdf global ruby 2.7.1
 gem install htmlbeautifier
+gem update htmlbeautifier
