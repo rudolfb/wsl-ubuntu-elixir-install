@@ -121,6 +121,7 @@ zq ALL=(ALL) NOPASSWD: ALL
 - https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
 - https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
 - https://marketplace.visualstudio.com/items?itemName=ouven.vscode-yab-for-eex-leex
+- https://marketplace.visualstudio.com/items?itemName=mrorz.language-gettext
 
 - https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
