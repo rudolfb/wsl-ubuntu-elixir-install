@@ -15,3 +15,5 @@ asdf install ruby 2.7.1
 asdf global ruby 2.7.1
 gem install htmlbeautifier
 gem update htmlbeautifier
+
+# asdf list-all ruby | grep -i "^[0-9]"
