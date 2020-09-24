@@ -27,7 +27,7 @@ sudo apt -y install libssl-dev make \
   git nano inotify-tools curl wget \
   traceroute net-tools whois libxml2-utils\
   default-jdk  \
-  curl dirmngr apt-transport-https lsb-release ca-certificates \
+  curl dirmngr apt-transport-https lsb-release ca-certificates gnupg\
   build-essential autoconf \
   m4 libncurses5-dev libgl1-mesa-dev \
   libglu1-mesa-dev libpng-dev libssh-dev \
