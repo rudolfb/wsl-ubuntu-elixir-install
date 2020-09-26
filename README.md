@@ -47,8 +47,9 @@ wsl --set-version Ubuntu 2
 ## Assigning a password for Postgres after Postgres installation
 ```
 sudo service postgresql start
-sudo su - postgres
-psql -c "alter user postgres with password 'postgres'"
+sudo -u postgres psql
+ALTER USER postgres PASSWORD 'postgres';
+\q
 ```
 
 Then in the Elixir **/config/dev.exs** assign the password:
