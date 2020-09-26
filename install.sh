@@ -24,7 +24,7 @@ cd ~
 sudo apt -y install libssl-dev make \
   automake autoconf libncurses5-dev \
   gcc unzip \
-  git nano inotify-tools curl wget \
+  git nano inotify-tools curl vim bash-completion wget \
   traceroute net-tools whois libxml2-utils\
   default-jdk  \
   curl dirmngr apt-transport-https lsb-release ca-certificates gnupg\
@@ -38,10 +38,10 @@ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt -y install nodejs
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt update
-sudo apt -y install postgresql-client-12
-sudo apt -y install postgresql-12
+sudo apt -y install postgresql-client-13
+sudo apt -y install postgresql-13
 # sudo service postgresql start
 
 # sudo apt -y install libwxgtk3.0-dev
