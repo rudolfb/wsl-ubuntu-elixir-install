@@ -46,6 +46,7 @@ wsl --set-version Ubuntu 2
 
 ## Assigning a password for Postgres after Postgres installation
 ```
+sudo service postgresql start
 sudo su - postgres
 psql -c "alter user postgres with password 'postgres'"
 ```
