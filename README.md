@@ -129,6 +129,43 @@ zq ALL=(ALL) NOPASSWD: ALL
 - https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 
+The following allows one to enter snippets inside of double quotes in a template:
+
+```
+"editor.quickSuggestions": {
+        "comments": false,
+        "other": true,
+        "strings": true
+    }
+```
+
+The following will allow the **html.eex** and **html.leex** template files to be interpreted as **html** files in VSCode:
+```
+"emmet.includeLanguages": {
+    "html-eex": "html",
+    "html-leex": "html"
+}
+```
+
+`File >> Preferences >> Settings`
+
+Then search for the tag name, e.g. **editor.quickSuggestions**, and assign the appropriate values.
+
+### Adding project specific snippets:
+
+`File >> Preferences >> User Snippets`
+
+New snippets file for 'my_project'...
+
+`elixir.json`
+
+Paste the snippets into the JSON file. If you already
+have snippets in that file, you'll need to put all the snippets in one
+top-level JavaScript object, so remove the outer braces in the code
+below.
+
+JSON doesn't allow comments, so you must remove any comment lines!
+
 ## ~~DNS~~
 ~~Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:~~
 
