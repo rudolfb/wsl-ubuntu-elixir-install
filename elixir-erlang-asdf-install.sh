@@ -1,6 +1,6 @@
 asdf plugin update erlang
-asdf install erlang 23.0.4
-asdf global erlang 23.0.4
+asdf install erlang 23.1
+asdf global erlang 23.1
 
 asdf plugin update elixir
 asdf install elixir 1.10.4-otp-23
