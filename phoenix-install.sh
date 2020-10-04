@@ -6,4 +6,4 @@ mix do local.hex --force , \
 mix do local.phx --force
 mix hex.info
   
-set -x
+set +x
