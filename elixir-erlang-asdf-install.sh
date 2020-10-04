@@ -5,6 +5,8 @@ ELIXIRVERSION=1.10.4-otp-23
 RUSTVERSION=1.46.0
 RUBYVERSION=2.7.1
 
+asdf plugin update --all
+
 asdf plugin update erlang
 asdf install erlang $ERLANGVERSION
 asdf global erlang $ERLANGVERSION
