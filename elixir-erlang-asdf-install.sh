@@ -1,9 +1,13 @@
 set -x
 
 ERLANGVERSION=23.1.1
+asdf latest erlang
 ELIXIRVERSION=1.10.4-otp-23
+asdf latest elixir
 RUSTVERSION=1.46.0
+asdf latest rust
 RUBYVERSION=2.7.1
+asdf latest ruby
 
 asdf plugin update --all
 
@@ -26,8 +30,3 @@ gem install htmlbeautifier
 gem update htmlbeautifier
 
 # asdf list-all ruby | grep -i "^[0-9]"
-
-asdf latest erlang
-asdf latest elixir
-asdf latest rust
-asdf latest ruby
