@@ -26,3 +26,8 @@ gem install htmlbeautifier
 gem update htmlbeautifier
 
 # asdf list-all ruby | grep -i "^[0-9]"
+
+asdf latest erlang
+asdf latest elixir
+asdf latest rust
+asdf latest ruby
