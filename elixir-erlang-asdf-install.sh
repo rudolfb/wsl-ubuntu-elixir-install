@@ -8,6 +8,7 @@ LATEST_ELIXIR_VERSION=$(asdf latest elixir)
 LATEST_RUST_VERSION=$(asdf latest rust)
 LATEST_RUBY_VERSION=$(asdf latest ruby)
 
+echo ""
 echo "Erlang: ${ERLANG_VERSION}"
 echo "Latest Erlang version: ${LATEST_ERLANG_VERSION}"
 echo ""
