@@ -1,18 +1,27 @@
+ERLANG_VERSION=23.1.1
+ELIXIR_VERSION=1.10.4-otp-23
+RUST_VERSION=1.46.0
+RUBY_VERSION=2.7.1
+
 LATEST_ERLANG_VERSION=$(asdf latest erlang)
 LATEST_ELIXIR_VERSION=$(asdf latest elixir)
 LATEST_RUST_VERSION=$(asdf latest rust)
 LATEST_RUBY_VERSION=$(asdf latest ruby)
 
-set -x
-
-ERLANG_VERSION=23.1.1
+echo "Erlang: ${ERLANG_VERSION}"
 echo "Latest Erlang version: ${LATEST_ERLANG_VERSION}"
-ELIXIR_VERSION=1.10.4-otp-23
+echo ""
+echo "Elixir: ${ELIXIR_VERSION}"
 echo "Latest Elixir version: ${LATEST_ELIXIR_VERSION}"
-RUST_VERSION=1.46.0
+echo ""
+echo "Rust: ${RUST_VERSION}"
 echo "Latest Rust version: ${LATEST_RUST_VERSION}"
-RUBY_VERSION=2.7.1
+echo ""
+echo "Ruby: ${RUBY_VERSION}"
 echo "Latest Ruby version: ${LATEST_RUBY_VERSION}"
+echo ""
+
+set -x
 
 asdf plugin update --all
 
