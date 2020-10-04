@@ -34,4 +34,6 @@ asdf global ruby $RUBYVERSION
 gem install htmlbeautifier
 gem update htmlbeautifier
 
+set +x
+
 # asdf list-all ruby | grep -i "^[0-9]"
