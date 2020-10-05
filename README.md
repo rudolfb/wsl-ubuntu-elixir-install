@@ -115,6 +115,7 @@ zq ALL=(ALL) NOPASSWD: ALL
 ```
 
 ## VSCode
+### Extentions for Elixir
 
 - https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls
 - https://marketplace.visualstudio.com/items?itemName=pgourlain.erlang
@@ -126,8 +127,12 @@ zq ALL=(ALL) NOPASSWD: ALL
 - https://marketplace.visualstudio.com/items?itemName=mrorz.language-gettext
 - https://marketplace.visualstudio.com/items?itemName=RoyalMist.vscode-eex-format
 
+### Extentions for CSV
 - https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer
 - https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
+
+### Themes
+- https://marketplace.visualstudio.com/items?itemName=kkalita.dark-plus-elixir
 
 The following allows one to enter snippets inside of double quotes in a template:
 
