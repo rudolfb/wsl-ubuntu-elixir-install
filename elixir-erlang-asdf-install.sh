@@ -26,21 +26,18 @@ set -x
 
 asdf plugin update --all
 
-asdf plugin update erlang
 asdf install erlang $ERLANG_VERSION
 asdf global erlang $ERLANG_VERSION
 
-asdf plugin update elixir
 asdf install elixir $ELIXIR_VERSION
 asdf global elixir $ELIXIR_VERSION
 
-asdf plugin update rust
 asdf install rust $RUST_VERSION
 asdf global rust $RUST_VERSION
 
-asdf plugin update ruby
 asdf install ruby $RUBY_VERSION
 asdf global ruby $RUBY_VERSION
+
 gem install htmlbeautifier
 gem update htmlbeautifier
 
