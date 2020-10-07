@@ -8,17 +8,26 @@ LATEST_ELIXIR_VERSION=$(asdf latest elixir)
 LATEST_RUST_VERSION=$(asdf latest rust)
 LATEST_RUBY_VERSION=$(asdf latest ruby)
 
+CURRENT_ERLANG_VERSION=$(asdf current erlang)
+CURRENT_ELIXIR_VERSION=$(asdf current elixir)
+CURRENT_RUST_VERSION=$(asdf current rust)
+CURRENT_RUBY_VERSION=$(asdf current ruby)
+
 echo ""
-echo "Erlang: ${ERLANG_VERSION}"
+echo "Erlang version to install: ${ERLANG_VERSION}"
+echo "Current Erlang version: ${CURRENT_ERLANG_VERSION}"
 echo "Latest Erlang version: ${LATEST_ERLANG_VERSION}"
 echo ""
-echo "Elixir: ${ELIXIR_VERSION}"
+echo "Elixir version to install: ${ELIXIR_VERSION}"
+echo "Current Elixir version: ${CURRENT_ELIXIR_VERSION}"
 echo "Latest Elixir version: ${LATEST_ELIXIR_VERSION}"
 echo ""
-echo "Rust: ${RUST_VERSION}"
+echo "Rust version to install: ${RUST_VERSION}"
+echo "Current Rust version: ${CURRENT_RUST_VERSION}"
 echo "Latest Rust version: ${LATEST_RUST_VERSION}"
 echo ""
-echo "Ruby: ${RUBY_VERSION}"
+echo "Ruby version to install: ${RUBY_VERSION}"
+echo "Current Ruby version: ${CURRENT_RUBY_VERSION}"
 echo "Latest Ruby version: ${LATEST_RUBY_VERSION}"
 echo ""
 
