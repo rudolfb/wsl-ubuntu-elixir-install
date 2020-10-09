@@ -33,6 +33,7 @@ echo ""
 
 set -x
 
+asdf update
 asdf plugin update --all
 
 asdf install erlang $ERLANG_VERSION
