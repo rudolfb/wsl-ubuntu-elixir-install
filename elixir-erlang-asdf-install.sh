@@ -37,24 +37,16 @@ echo ""
 set -x
 
 asdf install erlang $ERLANG_VERSION
-echo ""
 asdf global erlang $ERLANG_VERSION
-echo ""
 
 asdf install elixir $ELIXIR_VERSION
-echo ""
 asdf global elixir $ELIXIR_VERSION
-echo ""
 
 asdf install rust $RUST_VERSION
-echo ""
 asdf global rust $RUST_VERSION
-echo ""
 
 asdf install ruby $RUBY_VERSION
-echo ""
 asdf global ruby $RUBY_VERSION
-echo ""
 
 gem install htmlbeautifier
 gem update htmlbeautifier
