@@ -63,7 +63,7 @@ sudo apt -y install postgresql-13
 #                  wx3.1-headers \
 #                  wx-common
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 # echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 # The following ensures the line is appended only if it does not exist
