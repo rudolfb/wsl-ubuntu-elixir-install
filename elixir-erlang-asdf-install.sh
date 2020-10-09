@@ -3,6 +3,9 @@ ELIXIR_VERSION=1.11.0-otp-23
 RUST_VERSION=1.46.0
 RUBY_VERSION=2.7.2
 
+asdf update
+asdf plugin update --all
+
 LATEST_ERLANG_VERSION=$(asdf latest erlang)
 LATEST_ELIXIR_VERSION=$(asdf latest elixir)
 LATEST_RUST_VERSION=$(asdf latest rust)
@@ -32,9 +35,6 @@ echo "Latest Ruby version: ${LATEST_RUBY_VERSION}"
 echo ""
 
 set -x
-
-asdf update
-asdf plugin update --all
 
 asdf install erlang $ERLANG_VERSION
 asdf global erlang $ERLANG_VERSION
