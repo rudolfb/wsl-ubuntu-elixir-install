@@ -82,7 +82,7 @@ Create a batch file **wsl_startup.bat** with the following contents:
 wsl --user username --distribution Ubuntu --exec sudo service postgresql start
 ```
 
-where **username** is the user you use when working in the WSL environment.
+where **username** is the user you use when working in the WSL environment. The current distribution name is **Ubuntu**, but this may differ for other installations.
 
 In the Windows Task Scheduler add a new task that runs this batch file when you log onto Windows.
 
