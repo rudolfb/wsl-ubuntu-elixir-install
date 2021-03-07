@@ -64,6 +64,30 @@ config :agento, Agento.Repo,
 ## Start postgresql service automatically when WSL opens
 Currently, when you start WSL, services will not automatically start. Here a workaround.
 
+### First alternative
+
+```
+sudo visudo
+```
+
+Add the following to the end of the file:
+
+```
+%sudo ALL=(ALL) NOPASSWD: /usr/sbin/service postgresql *
+```
+
+Create a batch file **wsl_startup.bat** with the following contents:
+
+```
+wsl --user username --distribution Ubuntu --exec sudo service postgresql start
+```
+
+where **username** is the user you use when working in the WSL environment.
+
+In the Windows Task Scheduler add a new task that runs this batch file when you log onto Windows.
+
+### Second alternative:
+
 ```
 sudo nano /etc/profile.d/start-postgresql.sh
 ```
