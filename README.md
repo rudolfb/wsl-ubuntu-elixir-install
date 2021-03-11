@@ -195,21 +195,52 @@ below.
 
 JSON doesn't allow comments, so you must remove any comment lines!
 
-## ~~DNS~~
-~~Since Ubuntu 20 the DNS seems to have an issue. The following lines set a hard coded DNS server and resolves the issue:~~
+## DNS
+When using a VPN service such as NordVPN, the DNS of the WSL instance can be affected. A simple
 
 ```bash
-sudo su -c "echo '[network]' > /etc/wsl.conf"
-sudo su -c "echo 'generateResolvConf = false' >> /etc/wsl.conf"
-sudo nano /etc/wsl.conf
+sudo apt update
+```
+will fail with **Temporary failure** error messages.
 
-sudo nano /etc/resolve.conf
-# nameserver 8.8.8.8
+This can be respolved easily.
+
+Open **/etc/wsl.conf** and add the following to the file:
+
+
+```
+[network]
+generateResolvConf = false
 ```
 
-```bash
-sudo rm /etc/resolv.conf
+CTRL+O to save, and CTRL+X to exit. This will prevent WSL from overwriting the **/etc/resolv.conf** when restarting the WSL instance.
+
+Unlink the **/etc/resolv.conf**:
+
+```
 sudo unlink /etc/resolv.conf
-sudo bash -c "echo nameserver 192.168.188.1 > /etc/resolv.conf"
-sudo bash -c "echo nameserver 8.8.8.8 >> /etc/resolv.conf"
 ```
+
+Now open the **/etc/resolv.conf** and assign a known DNS server
+
+```
+nameserver 10.33.33.1
+nameserver 8.8.8.8
+```
+CTRL+O to save, and CTRL+X to exit.
+
+The DNS ought to work immediately, and the changes ought to survive a WSL restart.
+
+To test if the changes survive a WSL restart:
+
+```
+wsl --shutdown
+```
+
+Next restart the Ubuntu WSL and check the contents of **/etc/resolv.conf**
+
+```
+sudo nano /etc/resolv.conf
+```
+
+The contents ought to be the nameservers previously entered.
