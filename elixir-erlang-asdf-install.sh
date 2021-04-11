@@ -1,7 +1,7 @@
 ERLANG_VERSION=23.3.1
 ELIXIR_VERSION=1.11.4-otp-23
 RUST_VERSION=1.51.0
-RUBY_VERSION=3.0.0
+RUBY_VERSION=3.0.1
 
 asdf update
 asdf plugin update --all
