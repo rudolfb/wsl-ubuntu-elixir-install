@@ -19,7 +19,7 @@ CURRENT_RUBY_VERSION=$(asdf current ruby)
 echo ""
 echo "Latest Erlang version:                  ${LATEST_ERLANG_VERSION}"
 echo "Current Erlang version: ${CURRENT_ERLANG_VERSION}"
-echo "Erlang version to install: ${ERLANG_VERSION}"
+echo "Erlang version to install:              ${ERLANG_VERSION}"
 if [[ "${LATEST_ERLANG_VERSION}" != "${ERLANG_VERSION}" ]]
 then
   echo ----- UPDATE GITHUB: Need to update github and modify the version of Erlang to install
@@ -28,7 +28,7 @@ fi
 echo ""
 echo "Latest Elixir version:                  ${LATEST_ELIXIR_VERSION}"
 echo "Current Elixir version: ${CURRENT_ELIXIR_VERSION}"
-echo "Elixir version to install: ${ELIXIR_VERSION}"
+echo "Elixir version to install:              ${ELIXIR_VERSION}"
 if [[ "${LATEST_ELIXIR_VERSION}" != "${ELIXIR_VERSION}" ]]
 then
   echo ----- UPDATE GITHUB: Need to update github and modify the version of Elixir to install
@@ -37,7 +37,7 @@ fi
 echo ""
 echo "Latest Rust version:                  ${LATEST_RUST_VERSION}"
 echo "Current Rust version: ${CURRENT_RUST_VERSION}"
-echo "Rust version to install: ${RUST_VERSION}"
+echo "Rust version to install:              ${RUST_VERSION}"
 if [[ "${LATEST_RUST_VERSION}" != "${RUST_VERSION}" ]]
 then
   echo ----- UPDATE GITHUB: Need to update github and modify the version of Rust to install
@@ -46,7 +46,7 @@ fi
 echo ""
 echo "Latest Ruby version:                  ${LATEST_RUBY_VERSION}"
 echo "Current Ruby version: ${CURRENT_RUBY_VERSION}"
-echo "Ruby version to install: ${RUBY_VERSION}"
+echo "Ruby version to install:              ${RUBY_VERSION}"
 if [[ "${LATEST_RUBY_VERSION}" != "${RUBY_VERSION}" ]]
 then
   echo ----- UPDATE GITHUB: Need to update github and modify the version of Ruby to install
