@@ -5,7 +5,7 @@ sudo apt -y upgrade
 sudo apt -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libwxgtk-webview3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop
 
 # additional tools
-sudo apt -y install git nano inotify-tools curl vim bash-completion wget traceroute net-tools whois libxml2-utils default-jdk dirmngr apt-transport-https lsb-release ca-certificates gnupg
+sudo apt -y install git nano inotify-tools curl vim bash-completion wget traceroute net-tools whois libxml2-utils default-jdk dirmngr apt-transport-https lsb-release ca-certificates gnupg jq
 
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt -y install nodejs
