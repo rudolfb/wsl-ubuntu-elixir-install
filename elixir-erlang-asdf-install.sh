@@ -1,7 +1,12 @@
-ERLANG_VERSION=24.0.5
-ELIXIR_VERSION=1.12.2-otp-24
-RUST_VERSION=1.54.0
-RUBY_VERSION=3.0.2
+ERLANG_VERSION=$(asdf latest erlang)
+ELIXIR_VERSION=$(asdf latest elixir)
+RUST_VERSION=$(asdf latest rust)
+RUBY_VERSION=$(asdf latest ruby)
+
+# ERLANG_VERSION=24.0.5
+# ELIXIR_VERSION=1.12.2-otp-24
+# RUST_VERSION=1.54.0
+# RUBY_VERSION=3.0.2
 
 asdf update
 asdf plugin update --all
