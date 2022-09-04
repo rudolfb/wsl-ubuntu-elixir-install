@@ -14,9 +14,9 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 
 sudo apt -y update
-sudo apt -y install postgresql-13 postgresql-client-13
+sudo apt -y install postgresql-14 postgresql-client-14
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 
 # echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 # echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
