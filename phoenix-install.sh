@@ -1,5 +1,8 @@
 set -x
 
+CURRENT_PHOENIX_VERSION=$(mix phx.new -v)
+echo "Installed phoenix version before update: ${CURRENT_PHOENIX_VERSION}"
+
 mix do local.hex --force , \
   local.rebar --force , \
   archive.install hex phx_new 1.6.14 --force
